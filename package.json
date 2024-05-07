@@ -1,0 +1,40 @@
+{
+  "name": "ghl-electron",
+  "productName": "GHL",
+  "version": "0.0.3",
+  "description": "GHL App in Electron",
+  "author": "Herold Levente Kiraly",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeroldKiraly/ghl-electron.git"
+  },
+  "keywords": [
+    "GHL",
+    "Electron",
+    "Linux"
+  ],
+  "bugs": {
+    "url": "https://github.com/HeroldKiraly/ghl-electron/issues"
+  },
+  "homepage": "https://github.com/HeroldKiraly/ghl-electron#readme",
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.heroldkiraly.ghl-electron",
+    "files": "!.gitignore",
+    "linux": {
+      "target": "AppImage",
+      "category": "Office",
+      "icon": "icon.png"
+    }
+  }
+}
